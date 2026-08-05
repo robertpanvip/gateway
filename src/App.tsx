@@ -25,17 +25,17 @@ const rsbuildPlugins = [
   {
     name: 'rsbuild-plugin-oxlint',
     description: '把高性能 Rust lint 能力接进 Rsbuild 开发流，保存文件即可得到终端与浏览器双端反馈。',
-    href: 'https://github.com/robertpanvip/rsbuild-plugin-oxlint',
+    href: 'https://github.com/robertpanvip/rsbuild-plugin-lint/tree/main/packages/oxlint',
   },
   {
     name: 'rsbuild-plugin-biome',
     description: '为 Rsbuild 提供 Biome 驱动的代码质量检查，兼顾性能、配置灵活性与即插即用体验。',
-    href: 'https://github.com/robertpanvip/rsbuild-plugin-biome',
+    href: 'https://github.com/robertpanvip/rsbuild-plugin-lint/tree/main/packages/biome',
   },
   {
     name: 'rsbuild-plugin-rslint',
     description: '将 Rslint 集成进 Rsbuild 工作流，延续统一的插件封装方式与实时错误展示。',
-    href: 'https://github.com/robertpanvip/rsbuild-plugin-rslint',
+    href: 'https://github.com/robertpanvip/rsbuild-plugin-lint/tree/main/packages/rslint',
   },
 ];
 
@@ -79,12 +79,21 @@ const ideaPlugins = [
     href: 'https://plugins.jetbrains.com/search?search=volta-easy',
     meta: 'JetBrains Marketplace',
     description: '围绕 Volta 使用体验打造的 IDEA 插件入口，让 Node 工具链切换和项目感知更自然。',
-  }];
+  },
+  {
+    name: 'svgo',
+    icon: 'https://plugins.jetbrains.com/files/31661/1043337/icon/default.svg',
+    accent: 'accent-volta',
+    href: 'https://plugins.jetbrains.com/search?search=svgo',
+    meta: 'JetBrains Marketplace',
+    description: '围绕 SVGO 使用体验打造的 IDEA 插件入口，让 SVG 图标更小更轻。',
+  }
+];
 
 const links = {
   profile: 'https://github.com/robertpanvip',
-  spotlight: 'https://github.com/robertpanvip/plugin-cra-proxy',
-  lintSuite: 'https://github.com/robertpanvip/rsbuild-plugin-oxlint',
+  spotlight: 'https://github.com/robertpanvip/rsbuild-plugin-lint',
+  lintSuite: 'https://github.com/robertpanvip/rsbuild-plugin-lint',
 };
 
 const App = () => {
@@ -153,7 +162,7 @@ const App = () => {
       <section className="section-block">
         <div className="section-heading">
           <p className="eyebrow">Open Source Focus</p>
-          <h2>我更在意的是开发体验，而不是单个项目的曝光。</h2>
+          <h2>在意的是开发体验。</h2>
           <p>
             这些项目虽然分布在不同方向，但底层关注点是一致的：降低接入成本、提升反馈速度、减少开发过程中的切换和摩擦。
           </p>
